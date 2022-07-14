@@ -4,6 +4,7 @@ html{
 
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 .main-container {
@@ -15,7 +16,7 @@ body {
 .container {
     display: block;
     float: left;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     margin: 0 auto;
 }
@@ -61,8 +62,13 @@ p{
     color:#454545;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 ol{
-  margin-left: 30px;
+  margin-left:5px;
 }
 
 ol li {
@@ -83,13 +89,14 @@ section{
 section nav{
     display: block;
     float: left;
-    width: 30%; 
+    width: 20%; 
+    white-space:nowrap;
+    font-size: 0.9rem;
 }
 
 nav li {
-    background-color: #efefef ;
-   margin: 1px 20px 1px 0;
-   padding: 10px;
+    margin: 1px 5px 1px 0;
+    padding: 10px;
 }
 
 nav li:hover {
@@ -130,6 +137,18 @@ footer small {
     display: block;
 }
 
-.cog-form__content {
-    
+ #tenho-interesse {
+    text-align: center;
+ }
+
+.cognito{
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
 }
+
+.cog-form__content{
+    margin-left: 300px !important;
+    width: 1000px !important;
+}
+
