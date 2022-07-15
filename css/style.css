@@ -139,6 +139,7 @@ footer small {
 
  #tenho-interesse {
     text-align: center;
+    width: 100%;
  }
 
 .cognito{
@@ -152,3 +153,6 @@ footer small {
     width: 1000px !important;
 }
 
+@media screen  {
+    
+}
