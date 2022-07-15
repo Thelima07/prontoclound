@@ -1,5 +1,6 @@
 html{
     font: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -149,10 +150,77 @@ footer small {
 }
 
 .cog-form__content{
-    margin-left: 300px !important;
-    width: 1000px !important;
+    max-width: 100% !important;
+    padding-left: 30% !important;
+    
 }
 
-@media screen  {
+@media (max-width:425px) {
+
+    *{
+        margin: 0 0 10px;
+        padding: 0;
+        border:0 none;
+    }
     
+    html{
+        font-size: 75%;
+    }
+    section,
+    section nav,
+    section article {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    p{
+        margin-bottom: 1px;
+        line-height: 1.2;
+        font-size: 0.9rem;
+        color:#454545;
+    }
+     
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    table{
+        max-width: 100% !important;
+        min-width: 320px;
+    }
+    
+
+    .cog-form__content{
+        max-width: 80% !important;
+        padding-left: 20% !important;
+        
+    }
+}
+
+@media (max-width:600px) {
+
+    *{
+        margin: 0 0 10px;
+        padding: 0;
+        border:0 none;
+    }
+
+    body{
+        overflow-x: hidden !important;
+    }
+
+    table{
+        max-width: 100% !important;
+        min-width: 320px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
 }
