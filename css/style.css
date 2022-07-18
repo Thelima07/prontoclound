@@ -17,9 +17,11 @@ body {
 .container {
     display: block;
     float: left;
-    padding: 10px;
+    padding: 0;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
+    max-width: 1198px;
 }
 
 header {
@@ -155,6 +157,8 @@ footer small {
     
 }
 
+/* Responsividade Mobile*/
+
 @media (max-width:425px) {
 
     *{
@@ -201,6 +205,27 @@ footer small {
         padding-left: 20% !important;
         
     }
+    
+    #banner {
+        overflow-y: hidden;
+    }
+
+    .legenda {
+        margin-top: -50px;
+        font-size: 0.7rem;
+    }
+
+    .legenda h5,
+    .legenda h4 {
+        line-height: 1rem;
+    }
+
+    .button-cta {
+        margin-top: -10px;
+        white-space: nowrap;
+        
+        
+    }
 }
 
 @media (max-width:600px) {
@@ -223,4 +248,65 @@ footer small {
     h1 {
         font-size: 1.6rem;
     }
-}
+
+   }
+
+    /* landing page css*/
+
+    #banner {
+        background-image:url('../img/banner.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        width: 100vw;
+        height: 60vw;
+    }
+    
+    .legenda-container {
+        width: 30vw;
+        float: right;
+        margin: 10vh 10vh 0 0;
+
+    }
+
+    .legenda {
+        background-color: rgba(255, 255, 255, .6);
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    } 
+    
+    .legenda h5,
+    .legenda h4 {
+        color: #254159;
+        line-height: 1.5;
+    }
+
+    .button-cta {
+        border-radius: 30px;
+        display: inline;
+        background-color: orangered;
+        color: white;
+        font-size: 1rem;
+        text-transform: uppercase;
+        box-shadow: 1px 1px 4px #454545;
+        padding: 10px 15px;
+        width: auto;
+        text-decoration: none;
+        font-weight: 300;
+        float: right;
+    }
+
+   #saiba-mais {
+     padding: 40px 0;
+   }
+
+    #saiba-mais p,
+    #saiba-mais img {
+            width: 40%;
+            display: block;
+            float: left;
+            padding: 10px;
+    }
+
+   
